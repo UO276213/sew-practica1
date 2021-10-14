@@ -14,29 +14,50 @@
 </head>
 
 <body>
-    <!-- Datos con el contenidos que aparece en el navegador -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="trayectoria.html">Trayectoria</a>
+        <a href="aportaciones.html">Aportaciones</a>
+        <a href="opiniones.html">Opiniones</a>
+    </nav>
     <h1>Bert Bos</h1>
     <main>
         <h2>Dinos tú opinión</h2>
         <p>Por favor, rellena el siguiente formulario para que podamos realizar un estudio sobre la opinión
             de las personas respecto a este científico. Cuando se termine la investigación se le enviará un correo
-        con los resultados.</p>
+            con los resultados.</p>
         <form name='datos'>
-            <p><label><input type='text'/> Su nombre: </label></p>
-            <p><label><input type='text'/> Su apellido: </label></p>
-            <p><label><input type='date'/> Su fecha de nacimiento: </label></p>
+            <p><label>Su nombre: <input type='text' /> </label></p>
+            <p><label>Su apellido: <input type='text' /></label></p>
+            <p><label>Su fecha de nacimiento: <input type='date' /></label></p>
             <fieldset>
                 <legend> Seleccione su género</legend>
-                <p><label><input type="radio" name='género'/> Hombre</label></p>
-                <p><label><input type='radio' name='género'/> Mujer</label></p>
-                <p><label><input type='radio' name='género'/> Otro</label></p>
+                <p><label><input type="radio" name='género' /> Hombre</label></p>
+                <p><label><input type='radio' name='género' /> Mujer</label></p>
+                <p><label><input type='radio' name='género' /> Otro</label></p>
             </fieldset>
-            <p><label><input type='email'/> Su correo electrónico: </label></p>
-            <p><label><input type='checkbox'/> He leído el libro</label></p>
+            <p><label>Su correo electrónico: <input type='email' /></label></p>
+            <p><label>He leído el libro <input type='checkbox' /></label></p>
             <p><label>Información adicional</label></p>
             <p><textarea cols="20" rows="10"></textarea></p>
-            <p><label><input type='button' value="Enviar información"/></label></p>
+            <p><label><input type='button' value="Enviar información" /></label></p>
         </form>
     </main>
+    <aside>
+        <h3>FIP</h3>
+        <img src="multimedia/fip.png" alt="Logo de FIP" />
+        <p><a href="http://direct.fipradio.fr/live/fip-midfi.mp3" title="Directo de lo que está sonando en FIP">FIP</a>
+            es la radio francesa favorita de Bert Bos. Aquí tienes el audio de la canción más popular al día de la
+            redacción:</p>
+        <audio src="multimedia/Tricky-I'm-In-TheDoorway-feat.-Oh-Land.mp3" controls></audio>
+    </aside>
+    <footer>
+        <p>Página realizada por Manuel Antón de la Calle el 20/10/2021 - Estudiante de UNIOVI</p>
+        <p>Más detalles en la <a href="https://www.w3.org/People/Bos/">página oficial</a> de Bert Bos.</p>
+        <address>
+            <p>Si necesitas contactarme no lo dudes a través de <a href="mailto:uo276213@uniovi.es"> mi correo</a>.</p>
+        </address>
+    </footer>
 </body>
+
 </html>

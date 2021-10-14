@@ -6,7 +6,8 @@
     <meta charset="UTF-8" />
     <title>Bert Bos</title>
     <meta name="author" content="Manuel Antón" />
-    <meta name="keywords" content="Bert Bos, biografía, CSS, computación científica, web, w3c, Cascading Style Sheets" />
+    <meta name="keywords"
+        content="Bert Bos, biografía, CSS, computación científica, web, w3c, Cascading Style Sheets" />
     <meta name="description" content="Biografía de Bert Bos" />
 
     <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
@@ -14,7 +15,6 @@
 </head>
 
 <body>
-    <!-- Datos con el contenidos que aparece en el navegador -->
     <nav>
         <a href="index.html">Home</a>
         <a href="trayectoria.html">Trayectoria</a>
@@ -23,27 +23,45 @@
     </nav>
     <h1>Bert Bos</h1>
     <main>
-        <p><em>Bert Bos</em> es un científico de la computación nacido en La Haya (Países Bajos) y tuvo un papel destacado como uno de
-            los autores de la primera especificación de hojas de estilo en cascada.</p>
-        <p>Actualmente trabaja para el <a href="https://www.w3.org/Consortium/" title="Página web del W3C">World Wide Web Consortium</a> sobre hojas de estilo, matemáticas y privacidad entre otros.</p>
-        <img src="multimedia/bert-bos.jpg" alt="Imágen de Bert Bos" />
+        <section>
+            <h2>Quién es</h2>
+            <p><em>Bert Bos</em> es un científico de la computación nacido en La Haya (Países Bajos) y tuvo un papel
+                destacado como uno de
+                los autores de la primera especificación de hojas de estilo en cascada.</p>
+            <p>Actualmente trabaja para el <a href="https://www.w3.org/Consortium/" title="Página web del W3C">World
+                    Wide Web Consortium</a> sobre hojas de estilo, matemáticas y privacidad entre otros.</p>
+            <img src="multimedia/bert-bos.jpg" alt="Imágen de Bert Bos" />
+            <video src="multimedia/bert-bos-charla.mp4" controls preload="auto"></video>
+        </section>
+        <section>
+            <h2>Libro</h2>
+            <p>Es el autor del famoso libro <a href="https://www.w3.org/Style/LieBos3e/"
+                    title="Enlace a las erratas del libro">Cascading Style Sheets – designing for the Web</a>, donde
+                explica cómo usar las últimas versiones de CSS, con ejemplos prácticos y, además, el porqué detrás del
+                diseño de cada elemento de CSS.</p>
+            <picture>
+                <source media="(min-width: 900px)" srcset="multimedia/css-book-659.jpg" />
+                <!--TO DO-->
+                <source media="(min-width: 350px)" srcset="multimedia/css-book-345.png" />
+                <img src="multimedia/css-book-195.jpg" alt="Imágen de la 3ra edición del libro de Bert Bos" />
+            </picture>
+        </section>
     </main>
     <aside>
-        <h2>Libro</h2>
-        <p>Es el autor del famoso libro <a href="https://www.w3.org/Style/LieBos3e/" title="Enlace a las erratas del libro">Cascading Style Sheets – designing for the Web</a>, donde explica cómo usar las últimas versiones de css, con ejemplos prácticos, y además, el porqué detrás del diseño de cada elemento de css.</p>
-        <picture>
-            <source media="(min-width: 900px)" srcset="multimedia/css-book-659.jpg"/>
-            <source media="(min-width: 350px)" srcset="multimedia/css-book-345.png"/>
-            <img src="multimedia/css-book-195.jpg" alt="Imágen de la 3ra edición del libro de Bert Bos" style="width:auto;"/>
-        </picture>
+        <h3>FIP</h3>
+        <img src="multimedia/fip.png" alt="Logo de FIP" />
+        <p><a href="http://direct.fipradio.fr/live/fip-midfi.mp3" title="Directo de lo que está sonando en FIP">FIP</a>
+            es la radio francesa favorita de Bert Bos. Aquí tienes el audio de la canción más popular al día de la
+            redacción:</p>
+        <audio src="multimedia/Tricky-I'm-In-TheDoorway-feat.-Oh-Land.mp3" controls></audio>
     </aside>
     <footer>
-        <p>Página realizada por Manuel Antón de la Calle - Estudiante de UNIOVI</p>
+        <p>Página realizada por Manuel Antón de la Calle el 20/10/2021 - Estudiante de UNIOVI</p>
+        <p>Más detalles en la <a href="https://www.w3.org/People/Bos/">página oficial</a> de Bert Bos.</p>
         <address>
-            <p>Más detalles en la 
-            <a href="https://www.w3.org/People/Bos/">página oficial de Bert Bos</a>
-            </p>
+            <p>Si necesitas contactarme no lo dudes a través de <a href="mailto:uo276213@uniovi.es"> mi correo</a>.</p>
         </address>
     </footer>
 </body>
+
 </html>
