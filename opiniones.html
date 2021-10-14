@@ -29,28 +29,28 @@
         <form name='datos'>
             <fieldset>
                 <legend>Datos personales</legend>
-                <p><label>Su nombre: <input id="nombre" name="nombre" type='text' required autocomplete="on" /></label></p>
-                <p><label>Sus apellidos: <input id="apellidos" name="apellidos" type='text' required /></label></p>
-                <p><label>Su fecha de nacimiento: <input id="campoFechaNacimiento" name="campoFechaNacimiento" type='date' required /></label></p>
-                <p><label>Su correo electrónico: <input id="correo" name="correo" type='email' required /></label></p>
+                <p><label for="nombre">Su nombre: <input id="nombre" name="nombre" type='text' required autocomplete="on" /></label></p>
+                <p><label for="appelidos">Sus apellidos: <input id="apellidos" name="apellidos" type='text' required /></label></p>
+                <p><label for="campoFechaNacimiento">Su fecha de nacimiento: <input id="campoFechaNacimiento" name="campoFechaNacimiento" type='date' required /></label></p>
+                <p><label for="correo">Su correo electrónico: <input id="correo" name="correo" type='email' required /></label></p>
                 <fieldset>
                     <legend>Seleccione su género:</legend>
-                    <p><label><input id="campoHombre" type="radio" name="género" required /> Hombre</label></p>
-                    <p><label><input id="campoMujer" type='radio' name="género" /> Mujer</label></p>
-                    <p><label><input id="campoOtro" type='radio' name="género" /> Otro</label></p>
+                    <p><label for="campoHombre"><input id="campoHombre" type="radio" name="género" required /> Hombre</label></p>
+                    <p><label for="campoMujer"><input id="campoMujer" type='radio' name="género" /> Mujer</label></p>
+                    <p><label for="campoOtro"><input id="campoOtro" type='radio' name="género" /> Otro</label></p>
                 </fieldset>
             </fieldset>
             <fieldset>
                 <legend>Cuestionario</legend>
                 <fieldset>
                     <legend>¿Conocía previamente a Bert Bos</legend>
-                    <p><label><input id="campoSi" type="radio" name='esConocido' required /> Sí</label></p>
-                    <p><label><input id="campoNo" type='radio' name='esConocido' required /> No</label></p>
+                    <p><label for="campoSi"><input id="campoSi" type="radio" name='esConocido' required /> Sí</label></p>
+                    <p><label for="campoNo"><input id="campoNo" type='radio' name='esConocido' required /> No</label></p>
                 </fieldset>
-                <p><label>He leído el libro <input id="campoLibro" type='checkbox' name="campoLibro" required /></label></p>
-                <p><label>Su opinión a cerca de Bert Bos: <textarea id="masData" name="masData"></textarea></label></p>
+                <p><label for="campoLibro">He leído el libro <input id="campoLibro" type='checkbox' name="campoLibro" required /></label></p>
+                <p><label for="masData">Su opinión a cerca de Bert Bos: <textarea id="masData" name="masData"></textarea></label></p>
             </fieldset>
-            <p><label><input id="submit" type="submit" name="submit" value="Enviar información" /></label></p>
+            <p><label for="submit"><input id="submit" type="submit" name="submit" value="Enviar información" /></label></p>
         </form>
     </main>
     <aside>
