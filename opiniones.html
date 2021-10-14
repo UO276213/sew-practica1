@@ -27,20 +27,19 @@
             de las personas respecto a este científico. Cuando se termine la investigación se le enviará un correo
             con los resultados.</p>
         <form name='datos'>
-            <p><label>Su nombre: <input type='text' /> </label></p>
-            <p><label>Su apellido: <input type='text' /></label></p>
-            <p><label>Su fecha de nacimiento: <input type='date' /></label></p>
+            <p><label>Su nombre: <input type='text' required autocomplete="on"/></label></p>
+            <p><label>Su apellido: <input type='text' required/></label></p>
+            <p><label>Su fecha de nacimiento: <input type='date' required/></label></p>
             <fieldset>
                 <legend> Seleccione su género</legend>
-                <p><label><input type="radio" name='género' /> Hombre</label></p>
+                <p><label><input type="radio" name='género' required/> Hombre</label></p>
                 <p><label><input type='radio' name='género' /> Mujer</label></p>
                 <p><label><input type='radio' name='género' /> Otro</label></p>
             </fieldset>
-            <p><label>Su correo electrónico: <input type='email' /></label></p>
-            <p><label>He leído el libro <input type='checkbox' /></label></p>
-            <p><label>Información adicional</label></p>
-            <p><textarea cols="20" rows="10"></textarea></p>
-            <p><label><input type='button' value="Enviar información" /></label></p>
+            <p><label>Su correo electrónico: <input type='email' required/></label></p>
+            <p><label>He leído el libro <input type='checkbox' required/></label></p>
+            <p><label>Su opinión a cerca de Bert Bos: <textarea ></textarea></label></p>
+            <p><button>Enviar información</button></p>
         </form>
     </main>
     <aside>
