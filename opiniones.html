@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>Bert Bos - Opiniones</title>
+    <meta name="author" content="Manuel Antón" />
+    <meta name="keywords" content="Bert Bos, opionion, CSS, computación científica, estudio, w3c" />
+    <meta name="description" content="formulario de recogida de opiones sobre Bert Bos" />
+
+    <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+</head>
+
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <h1>Bert Bos</h1>
+    <main>
+        <h2>Dinos tú opinión</h2>
+        <p>Por favor, rellena el siguiente formulario para que podamos realizar un estudio sobre la opinión
+            de las personas respecto a este científico. Cuando se termine la investigación se le enviará un correo
+        con los resultados.</p>
+        <form name='datos'>
+            <p><label><input type='text'/> Su nombre: </label></p>
+            <p><label><input type='text'/> Su apellido: </label></p>
+            <p><label><input type='date'/> Su fecha de nacimiento: </label></p>
+            <fieldset>
+                <legend> Seleccione su género</legend>
+                <p><label><input type="radio" name='género'/> Hombre</label></p>
+                <p><label><input type='radio' name='género'/> Mujer</label></p>
+                <p><label><input type='radio' name='género'/> Otro</label></p>
+            </fieldset>
+            <p><label><input type='email'/> Su correo electrónico: </label></p>
+            <p><label><input type='checkbox'/> He leído el libro</label></p>
+            <p><label>Información adicional</label></p>
+            <p><textarea cols="20" rows="10"></textarea></p>
+            <p><label><input type='button' value="Enviar información"/></label></p>
+        </form>
+    </main>
+</body>
+</html>
