@@ -125,7 +125,7 @@ aside {
   text-align: center;
   grid-area: aside;
   border-radius: 1rem;
-  min-width: 20em;
+  min-width: 18em;
 }
 
 /* Especificidad 001 */
