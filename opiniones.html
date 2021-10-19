@@ -8,32 +8,30 @@
     <meta name="author" content="Manuel Antón" />
     <meta name="keywords" content="Bert Bos, opionion, CSS, computación científica, estudio, w3c" />
     <meta name="description" content="formulario de recogida de opiones sobre Bert Bos" />
-    <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial scale=1.0" />
 
-    <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <link rel="icon" href="multimedia/Bert-bos-icon.png">
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
 </head>
 
 <body>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="trayectoria.html">Trayectoria</a>
-        <a href="aportaciones.html">Aportaciones</a>
-        <a href="opiniones.html">Opiniones</a>
+        <a title="Inicio" accesskey="I" tabindex="2" href="index.html">Inicio</a>
+        <a title="Trayectoria" accesskey="T" tabindex="3" href="trayectoria.html">Trayectoria</a>
+        <a title="Aportaciones" accesskey="A" tabindex="4" href="aportaciones.html">Aportaciones</a>
+        <a title="Opiniones" accesskey="O" tabindex="1" href="opiniones.html">Opiniones</a>
     </nav>
     <h1>Bert Bos</h1>
     <main>
         <h2>Dinos tú opinión</h2>
-        <p>Por favor, rellena el siguiente formulario para que podamos realizar un estudio sobre la opinión
-            de las personas respecto a este científico. Cuando se termine la investigación se le enviará un correo
-            con los resultados.</p>
+        <p>Por favor, rellene el siguiente formulario para que podamos realizar un estudio sobre la opinión de las personas respecto a este científico. Cuando se termine la investigación se le enviará un correo con los resultados.</p>
         <form name='datos'>
             <fieldset>
                 <legend>Datos personales</legend>
-                <p><label for="nombre">Su nombre: <input id="nombre" name="nombre" type='text' required autocomplete="on" /></label></p>
-                <p><label for="apellidos">Sus apellidos: <input id="apellidos" name="apellidos" type='text' required /></label></p>
-                <p><label for="campoFechaNacimiento">Su fecha de nacimiento: <input id="campoFechaNacimiento" name="campoFechaNacimiento" type='date' required /></label></p>
-                <p><label for="correo">Su correo electrónico: <input id="correo" name="correo" type='email' required /></label></p>
+                <p><label for="nombre">Nombre: <input id="nombre" name="nombre" type='text' required autocomplete="on" /></label></p>
+                <p><label for="apellidos">Apellidos: <input id="apellidos" name="apellidos" type='text' required /></label></p>
+                <p><label for="campoFechaNacimiento">Fecha de nacimiento: <input id="campoFechaNacimiento" name="campoFechaNacimiento" type='date' required /></label></p>
+                <p><label for="correo">Email: <input id="correo" name="correo" type='email' required/></label></p>
                 <fieldset>
                     <legend>Seleccione su género:</legend>
                     <p><label for="campoHombre"><input id="campoHombre" type="radio" name="género" required /> Hombre</label></p>
@@ -44,12 +42,13 @@
             <fieldset>
                 <legend>Cuestionario</legend>
                 <fieldset>
-                    <legend>¿Conocía previamente a Bert Bos</legend>
+                    <legend>¿Conocía previamente a Bert Bos?</legend>
                     <p><label for="campoSi"><input id="campoSi" type="radio" name='esConocido' required /> Sí</label></p>
                     <p><label for="campoNo"><input id="campoNo" type='radio' name='esConocido' required /> No</label></p>
                 </fieldset>
                 <p><label for="campoLibro">He leído el libro <input id="campoLibro" type='checkbox' name="campoLibro" required /></label></p>
-                <p><label for="masData">Su opinión a cerca de Bert Bos: <textarea id="masData" name="masData"></textarea></label></p>
+                <p><label for="masData">Su opinión acerca de Bert Bos:</label></p>
+                <p><textarea id="masData" name="masData" placeholder="Escriba aquí"></textarea></p>
             </fieldset>
             <p><label for="submit"><input id="submit" type="submit" name="submit" value="Enviar información" /></label></p>
         </form>
@@ -57,9 +56,8 @@
     <aside>
         <h3>FIP</h3>
         <img src="multimedia/fip.png" alt="Logo de FIP" />
-        <p><a href="http://direct.fipradio.fr/live/fip-midfi.mp3" title="Directo de lo que está sonando en FIP">FIP</a>
-            es la radio francesa favorita de Bert Bos. Aquí tienes el audio de la canción más popular al día de la
-            redacción:</p>
+        <p><a href="http://direct.fipradio.fr/live/fip-midfi.mp3" title="Directo de lo que está sonando en FIP">FIP</a> es la radio francesa favorita de Bert Bos. Aquí tienes el audio de la canción más popular al día de la redacción:
+        </p>
         <audio src="multimedia/Tricky-I'm-In-The-Doorway-feat.-Oh-Land.mp3" controls></audio>
     </aside>
     <footer>
